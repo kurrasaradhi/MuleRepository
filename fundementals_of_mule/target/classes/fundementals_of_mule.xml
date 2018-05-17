@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
         <set-variable doc:name="Set Language Variable" value="#[message.inboundProperties.'http.query.params'.language]" variableName="language"/>
         <choice doc:name="Choice">
             <when expression="flowVars.language == 'Portuguese'">
-                <set-payload doc:name="Reply in Portugues" value="It's in Portuguesw"/>
+                <set-payload doc:name="Reply in Portuguese" value="It's in Portuguesw"/>
             </when>
             <when expression="#[flowVars.language = 'French']">
                 <set-payload doc:name="Reply in French" value="It's in French"/>
