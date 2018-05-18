@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                 <set-payload doc:name="Reply in Portuguese" value="It's in Portuguesw"/>
             </when>
             <when expression="#[flowVars.language = 'French']">
-                <set-payload doc:name="Reply in French" value="It's in French"/>
+                <set-payload doc:name="Reply in French" value="It's in French Language"/>
             </when>
             <otherwise>
                 <set-variable variableName="language" value="the default  language" doc:name="Ser Default Language Variable"/>
