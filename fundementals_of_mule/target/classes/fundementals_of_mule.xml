@@ -24,6 +24,6 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                 <set-payload value="Defult" doc:name="Reply in Default"/>
             </otherwise>
         </choice>
-        <logger level="INFO" doc:name="Logger" message="The reply &quot;#[message.payload]&quot; Means &quot;Hello How are you?&quot; in #[flowVars.language]"/>
+        <logger level="INFO" doc:name="Logger 123" message="The reply &quot;#[message.payload]&quot; Means &quot;Hello How are you?&quot; in #[flowVars.language]"/>
     </flow>
 </mule>
