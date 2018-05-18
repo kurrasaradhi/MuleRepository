@@ -21,7 +21,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
             </when>
             <otherwise>
                 <set-variable variableName="language" value="the default  language" doc:name="Ser Default Language Variable"/>
-                <set-payload value="Defult" doc:name="Reply in Default"/>
+                <set-payload value="Defult View" doc:name="Reply in Default"/>
             </otherwise>
         </choice>
         <logger level="INFO" doc:name="Logger 123" message="The reply &quot;#[message.payload]&quot; Means &quot;Hello How are you?&quot; in #[flowVars.language]"/>
