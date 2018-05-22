@@ -12,7 +12,6 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
     <flow name="fundementals_of_muleFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP" allowedMethods="GET" doc:description="Hi"/>
         <expression-filter expression="#[message.payload != 'favicon.ico']" doc:name="Expression"/>
-        <s3:no-operation-selected config-ref="" doc:name="Amazon S3"/>
         <set-variable doc:name="Set Language Variable" value="#[message.inboundProperties.'http.query.params'.language]" variableName="language"/>
         <choice doc:name="Choice">
             <when expression="flowVars.language == 'Portuguese'">
