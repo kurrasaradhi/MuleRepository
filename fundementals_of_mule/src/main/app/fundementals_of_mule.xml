@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP" allowedMethods="GET" doc:description="Hi" parseRequest="false"/>
         <expression-filter expression="#[message.payload != 'favicon.ico']" doc:name="Expression"/>
         <set-variable doc:name="Set Language Variable" value="#[message.inboundProperties.'http.query.params'.language]" variableName="language"/>
-        <choice doc:name="Choice">
+        <choice doc:name="Choice1">
             <when expression="flowVars.language == 'Portuguese'">
                 <set-payload doc:name="Reply in Portuguese" value="It's in Portuguesw"/>
             </when>
